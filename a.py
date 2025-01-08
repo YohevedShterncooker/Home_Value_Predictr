@@ -13,7 +13,7 @@ def training_model():
     df = pd.read_csv("./AGG-table.csv", usecols=['avg_jitter', 'avg_package_lost', 'avg_rtt', 'SCORE1'])
     
     df = df.dropna()
-
+    x = 9
     #Define features and target
     features = ['avg_jitter', 'avg_rtt', 'avg_package_lost']
     target = 'SCORE1'
