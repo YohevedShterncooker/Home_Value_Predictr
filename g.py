@@ -38,7 +38,7 @@ def data_details(df):
     if df_clean.empty:
         return (0, 0, [])
 
-    # count rows ,count coloumns, count headers
+    ## count rows ,count coloumns, count headers
     return (df_clean.shape[0], df_clean.shape[1], list(df_clean.columns))
 
 def max_absolute_magnitude(df):
